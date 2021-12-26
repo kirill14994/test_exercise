@@ -5,6 +5,13 @@
 int[] numbers = { 1, 8, 3, 10, 4, 9 };
 int[] evenNumbers = new int [numbers.Length];
 
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write(array[i]);
+    }
+}
 
 for (int i = 0; i < numbers.Length; i++)
 {
