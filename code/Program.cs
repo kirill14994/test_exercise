@@ -13,13 +13,18 @@ void PrintArray(int[] array)
     }
 }
 
-for (int i = 0; i < numbers.Length; i++)
+void SortArray(int[] array, int[] newArray)
 {
-    if (numbers[i] > 8) evenNumbers[i] = numbers[i];
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i] > 8) newArray[i] = array[i];
 }
+}
+
 
 Console.WriteLine("Даны числа: ");
 PrintArray(numbers);
 Console.WriteLine();
 Console.WriteLine("Числа больше 8: ");
+SortArray(numbers, evenNumbers);
 PrintArray(evenNumbers);
